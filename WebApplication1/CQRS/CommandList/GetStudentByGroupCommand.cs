@@ -22,6 +22,8 @@ namespace WebApplication1.CQRS.CommandList
 
 
                 return studentDTOs;
+
+
             }
         }
     }
