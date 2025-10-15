@@ -19,6 +19,7 @@ namespace ConsoleApp2
             Console.WriteLine("6. Такая же задача, как п.5, но с указанием индекса конкретной специальности");
             Console.WriteLine("7. Добавление новой группы для указанной специальности");
             Console.WriteLine("8. Перевод указанного студента в указанную группу");
+            Console.WriteLine("9. Добавить метод, который возвратит дублирующегося студента (один и тот же человек в двух разных группах)");
             int.TryParse(Console.ReadLine(), out int operation);
             switch (operation)
             {
@@ -55,6 +56,10 @@ namespace ConsoleApp2
                     break;
                 case 8:
                     Eight();
+                    Console.ReadLine();
+                    break;
+                case 9:
+                    Nine();
                     Console.ReadLine();
                     break;
 
@@ -108,6 +113,10 @@ namespace ConsoleApp2
         }
 
         public async static void Eight()
+        {
+
+        }
+        public async static void Nine()
         {
 
         }

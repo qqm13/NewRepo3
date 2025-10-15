@@ -18,9 +18,9 @@ namespace WebApplication1.CQRS.CommandList
             public async Task<CountGenders> HandleAsync(GetGenderCountCommand request, CancellationToken ct = default)
             {
                 CountGenders countGenders = new CountGenders();
-                //db.Students.Where(s => s.IdGroup == request.Index && s.Gender == "1").Select(s => );
-                    //db.Students.Where(s => s.IdGroup == request.Index).Select
-                    //(s => new StudentDTO {Id = s.Id, FirstName = s.FirstName, LastName = s.LastName, Gender = s.Gender, IdGroup = s.IdGroup, Phone = s.Phone });
+                //db.Students.Where(s => s.IdGroup == request.Index && s.Gender == 1).Select(s => );
+                //db.Students.Where(s => s.IdGroup == request.Index).Select
+                //(s => new StudentDTO {Id = s.Id, FirstName = s.FirstName, LastName = s.LastName, Gender = s.Gender, IdGroup = s.IdGroup, Phone = s.Phone });
                 return countGenders;
             }
         }
